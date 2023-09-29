@@ -1,0 +1,59 @@
+@use "../abstracts/variables" as v;
+
+#express-info {
+    background-color: v.$bg-colour;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid v.$bg-colour;
+    border-radius: 20px;
+    p {
+        margin-bottom: 15px;
+        &:first-of-type:not(.collab-button) {
+            line-height: 30px;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+    }
+}
+
+#express-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.collab-button {
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    &:hover {
+        background-color: v.$dark-gray;
+        color: white;
+        border: 2px solid v.$dark-gray;
+    }
+}
+
+#top {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    #express-info {
+        p {
+            &:first-of-type:not(.collab-button) {
+                font-size: 36px;
+                line-height: 40px;
+            }
+        }
+    }
+}

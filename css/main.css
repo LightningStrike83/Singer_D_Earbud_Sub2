@@ -4,6 +4,14 @@ h3 {
 
 p, a {
   font-family: "IBM Plex Sans", Arial, sans-serif;
+  line-height: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {
@@ -14,29 +22,104 @@ p, a {
 header {
   position: sticky;
   top: 0;
+  background-color: #dedede;
 }
 
-#header-nav {
-  display: flex;
-  justify-content: flex-end;
-  text-align: right;
+#main-logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: 50%;
+  max-width: 70%;
+}
+
+#home-button {
+  align-self: center;
 }
 
 #main-nav {
   display: flex;
   flex-direction: column;
+  text-align: right;
 }
 #main-nav li {
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
-  #header-nav {
-    display: block;
-  }
   #main-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-self: center;
+  }
+  #main-nav li {
+    margin-bottom: 0;
+  }
+}
+.line-divider {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.line-divider div {
+  border-bottom: 3px solid black;
+}
+
+@media screen and (min-width: 768px) {
+  .line-divider {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+#express-info {
+  background-color: #dedede;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid #dedede;
+  border-radius: 20px;
+}
+#express-info p {
+  margin-bottom: 15px;
+}
+#express-info p:first-of-type:not(.collab-button) {
+  line-height: 30px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+#express-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.collab-button {
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.collab-button:hover {
+  background-color: #797979;
+  color: white;
+  border: 2px solid #797979;
+}
+
+#top {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  #express-info p:first-of-type:not(.collab-button) {
+    font-size: 36px;
+    line-height: 40px;
   }
 }/*# sourceMappingURL=main.css.map */

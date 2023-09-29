@@ -1,0 +1,12 @@
+.line-divider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    div {border-bottom: 3px solid black;}
+}
+
+@media screen and (min-width: 768px) {
+    .line-divider {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}

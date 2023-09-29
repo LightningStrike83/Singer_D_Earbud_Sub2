@@ -1,17 +1,26 @@
+@use "../abstracts/variables" as v;
+
 header {
     position: sticky;
     top: 0;
+    background-color: v.$bg-colour;
 }
 
-#header-nav {
-    display: flex;
-    justify-content: flex-end;
-    text-align: right;
+#main-logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-width: 50%;
+    max-width: 70%;
+}
+
+#home-button {
+    align-self: center;
 }
 
 #main-nav {
     display: flex;
     flex-direction: column;
+    text-align: right;
     li {
         margin-bottom: 10px;
     }
@@ -19,13 +28,13 @@ header {
 
 @media screen and (min-width: 768px)  {
 
-    #header-nav {
-        display: block;
-    }
-
     #main-nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-self: center;
+        li {
+            margin-bottom: 0;
+        }
     }
 }

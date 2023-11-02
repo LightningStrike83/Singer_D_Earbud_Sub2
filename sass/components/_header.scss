@@ -54,6 +54,10 @@ header {
     transform: rotate(90deg);
 }
 
+.menu-link-desktop {
+    display: none;
+}
+
 @media screen and (min-width: 768px)  {
 
     #hamburger-menu {
@@ -69,5 +73,15 @@ header {
             margin-bottom: 0;
             border-bottom: none;
         }
+    }
+}
+
+@media screen and (min-width: 1200px)  {
+    .menu-link-mobile {
+        display: none;
+    }
+
+    .menu-link-desktop {
+        display: block;
     }
 }

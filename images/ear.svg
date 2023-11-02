@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.77 90.99">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Consolas, Consolas;
+        font-size: 48px;
+      }
+
+      .cls-2 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <text class="cls-1" transform="translate(7.21 59.47)"><tspan x="0" y="0">G</tspan></text>
+    <path class="cls-2" d="m37.72,89.6c-.08-.9-.13-1.76-.16-2.61-.02,0-.04,0-.05,0-18.47,0-33.5-18.62-33.5-41.5S18.8,4.28,37.09,4c-.56-1.22-.52-2.69,0-4C16.59.28,0,20.57,0,45.49s16.82,45.5,37.5,45.5c.09,0,.18,0,.27,0,0-.48-.02-.95-.05-1.38Z"/>
+  </g>
+</svg>

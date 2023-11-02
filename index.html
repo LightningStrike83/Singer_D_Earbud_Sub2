@@ -38,7 +38,30 @@
 
     <section class="grid-con" id="ar-object" class="grid-con">
         <h2 class="hidden">AR Object</h2>
-        <p class="col-span-full">AR Object</p>
+        <model-viewer class="col-span-full m-col-span-9" src="model/Singer_Dan_Earbud_1.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.png" shadow-intensity="1" interaction-prompt="none">
+            <button class="Hotspot" slot="hotspot-1" data-position="12.179514646530151m 36.08121153193069m -0.5351811012523644m" data-normal="1m 0m 1.2246468525851679e-16m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-info-1"></div>
+            </button><button class="Hotspot" slot="hotspot-2" data-position="-17.464553552784952m 54.19875102818388m 5.742613411012748m" data-normal="-0.31202715474103904m 0.40656817885227486m 0.8586858393201534m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-info-2"></div>
+            </button><button class="Hotspot" slot="hotspot-3" data-position="12.342719242789645m 50.54635376598848m -0.9527564992319792m" data-normal="0.9999999992506402m -0.00003096496282162356m -0.000023235546676583315m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-info-3"></div>
+            </button><button class="Hotspot" slot="hotspot-4" data-position="-4.345985488257639m 34.83760241972824m -0.17370937745087112m" data-normal="-0.999789647696585m 0.0204430885283168m -0.001655442587918558m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-info-4"></div>
+            </button><button class="Hotspot" slot="hotspot-5" data-position="4.570877552032471m 21.634262384663998m -0.5525936018379097m" data-normal="-1m 0m -1.2246468525851679e-16m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-info-5"></div>
+            </button><button class="Hotspot" slot="hotspot-6" data-position="4.408717234724406m 44.04117393916645m -11.239316835999487m" data-normal="1.2246468525851679e-16m 0m -1m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-info-6"></div>
+            </button>
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+        </model-viewer>
+
+        <div id="model-description" class="col-span-full m-col-span-3">
+            <h2 class="hidden">Model Description</h2>
+            <p>View A Basic Model</p>
+            <p>Have an interactive look with one of our basic earbuds! Click and drag to view all sides of the earbud, and hover over a hotspot to view more detailed information about our product's features!</p>
+        </div>
     </section>
 
     <section class="grid-con line-divider">
@@ -110,6 +133,9 @@
         <p id="copyright">Copyright © 2023 Project:. All rights reserved.</p>
     </footer>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/model.js"></script>
 </body>
 </html>

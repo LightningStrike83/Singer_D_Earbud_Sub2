@@ -1,21 +1,26 @@
 h3 {
-  font-family: "Martian Mono";
+  font-family: "Martian Mono", Arial, sans-serif;
 }
 
 p, a {
   font-family: "IBM Plex Sans", Arial, sans-serif;
   line-height: 25px;
+  font-size: 16px;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 a:hover {
   text-decoration: underline;
 }
+a:visited {
+  color: black;
+}
 
 @media screen and (min-width: 768px) {
-  a {
+  p, a {
     font-size: 13px;
   }
 }
@@ -73,6 +78,10 @@ header {
   transform: rotate(90deg);
 }
 
+.menu-link-desktop {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   #hamburger-menu {
     display: none;
@@ -86,6 +95,14 @@ header {
   #main-nav li {
     margin-bottom: 0;
     border-bottom: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-link-mobile {
+    display: none;
+  }
+  .menu-link-desktop {
+    display: block;
   }
 }
 .line-divider {
@@ -102,6 +119,54 @@ header {
     margin-bottom: 30px;
   }
 }
+#bottom-nav {
+  grid-column-start: 2;
+  padding-left: 20px;
+}
+#bottom-nav li {
+  margin-bottom: 15px;
+}
+
+#copyright {
+  grid-column-start: 2;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+#product-showcase, #ar-object, #xray-desktop {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #dedede;
+  margin-top: 20px;
+  border: 1px solid #dedede;
+  border-radius: 20px;
+  justify-items: center;
+}
+
+#xray-desktop {
+  display: none;
+}
+
+#xray-mobile {
+  background-color: #dedede;
+  margin-top: 20px;
+  border: 1px solid #dedede;
+  border-radius: 20px;
+  justify-items: center;
+  display: flex;
+  flex-direction: column;
+}
+#xray-mobile div {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: red;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 1px solid #dedede;
+  border-radius: 20px;
+}
+
 #express-info {
   background-color: #dedede;
   padding-top: 20px;
@@ -117,7 +182,7 @@ header {
 #express-info p:first-of-type:not(.collab-button) {
   line-height: 30px;
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 #express-buttons {
@@ -145,17 +210,59 @@ header {
   border: 2px solid #797979;
 }
 
+#top-button {
+  justify-items: end;
+}
+
 #top {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  padding-right: 20px;
 }
 #top:hover {
   opacity: 50%;
 }
 
+#personalization-image {
+  background-color: #dedede;
+  border: 1px solid #dedede;
+  border-radius: 20px;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 @media screen and (min-width: 768px) {
+  #product-showcase, #ar-object, #xray-desktop {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #dedede;
+    margin-top: 30px;
+  }
   #express-info p:first-of-type:not(.collab-button) {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 40px;
+  }
+  #product-showcase {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #product-showcase, #ar-object, #xray-desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #xray-mobile {
+    display: none;
+  }
+  #xray-desktop {
+    display: grid;
   }
 }/*# sourceMappingURL=main.css.map */

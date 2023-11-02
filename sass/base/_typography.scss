@@ -1,10 +1,11 @@
 h3 {
-    font-family: 'Martian Mono';
+    font-family: 'Martian Mono', Arial, sans-serif;
 }
 
 p, a {
     font-family: 'IBM Plex Sans', Arial, sans-serif;
     line-height: 25px;
+    font-size: 16px;
 }
 
 a {
@@ -12,10 +13,14 @@ a {
     &:hover {
         text-decoration: underline;
     }
+    color: black;
+    &:visited {
+        color: black;
+    }
 }
 
 @media screen and (min-width: 768px) {
-    a {
+    p, a {
         font-size: 13px;
     }
 }

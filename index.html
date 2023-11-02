@@ -16,20 +16,50 @@
         <a id="home-button" href="index.html" class="col-span-2 m-col-span-3"><img id="main-logo" src="images/SVG/logo.svg" alt="Project:'s logo"></a>
 
         <img id="hamburger-menu" class="col-start-4 col-end-5" src="images/SVG/ham_menu.svg" alt="Hamburger Menu">
-        <ul id="main-nav" class="col-start-3 col-end-5 m-col-start-8 m-col-end-13 l-col-start-9 l-col-end-13">
+        <ul id="main-nav" class="col-start-3 col-end-5 m-col-start-7 m-col-end-13 l-col-start-9 l-col-end-13">
             <li><a href="#product-showcase">Product</a></li>
-            <li><a href="#benefits">Features</a></li>
+            <li><a href="#ar-object">Features</a></li>
+            <li class="menu-link-mobile"><a href="#xray-mobile">Hardware</a></li>
+            <li class="menu-link-desktop"><a href="#xray-desktop">Hardware</a></li>
             <li><a href="#personalization">Personalization</a></li>
-            <li><a href="#inquiries">Inquiries</a></li>
+            <li><a href="">Buy Now</a></li>
         </ul>
     </header>
 
-    <section class="grid-con" id="product-showcase">
+    <section class="grid-con" id="product-showcase" class="grid-con">
         <h2 class="hidden">Product Video</h2>
+        <p class="col-span-full">Video Animation</p>
     </section>
 
-    <section class="grid-con" id="features">
-        <h2 class="hidden">Product Features</h2>
+    <section class="grid-con line-divider">
+        <h2 class="hidden">Line</h2>
+        <div class="col-start-1 col-end-5 m-col-start-1 m-col-end-13"></div>
+    </section>
+
+    <section class="grid-con" id="ar-object" class="grid-con">
+        <h2 class="hidden">AR Object</h2>
+        <p class="col-span-full">AR Object</p>
+    </section>
+
+    <section class="grid-con line-divider">
+        <h2 class="hidden">Line</h2>
+        <div class="col-start-1 col-end-5 m-col-start-1 m-col-end-13"></div>
+    </section>
+
+    <section class="grid-con" id="xray-mobile" class="grid-con">
+        <h2 class="hidden">X-Ray Earbud</h2>
+        <div>
+            <p class="col-span-full">X-Ray Earbud Mobile (X-Ray)</p>
+        </div>
+
+        <div>
+            <p class="col-span-full">X-Ray Earbud Mobile (Solid)</p>
+        </div>
+    </section>
+
+    <section class="grid-con" id="xray-desktop" class="grid-con">
+        <h2 class="hidden">X-Ray Earbud</h2>
+        <p class="col-span-full">X-Ray Earbud Desktop</p>
     </section>
 
     <section class="grid-con line-divider">
@@ -40,12 +70,16 @@
     <section class= "grid-con" id="personalization">
         <h2 class="hidden">Personalization</h2>
 
-        <div id="express-info" class="col-start-3 col-end-5 m-col-start-8 m-col-end-13">
+        <div id="personalization-image" class="col-span-full m-col-span-6">
+            <p>Product Image</p>
+        </div>
+
+        <div id="express-info" class="col-span-full m-col-start-8 m-col-end-13">
             <p>Your Style, Your Way</p>
             <p>Project: is dedicated to bringing product straight to your fingertips that allows you express yourself the way you deserve to be expressed. With an ongoing, continuous range of collaborations, the possibilities are near limitless!</p>
             <p>Browse Some Of Our Collaborations:</p>
 
-            <div id="express-buttons" class="col-start-3 col-end-5 m-col-start-8 m-col-end-13">
+            <div id="express-buttons">
                 <p class="collab-button">LGBTQ+</p>
                 <p class="collab-button">Sanrio</p>
                 <p class="collab-button">Pokemon</p>
@@ -59,15 +93,22 @@
         <div class="col-start-1 col-end-5 m-col-start-1 m-col-end-13"></div>
     </section>
 
-    <section class= "grid-con" id="inquires">
-        <h2 class="hidden">Inquiries</h2>
-    </section>
-
     <section id="top-button" class="grid-con">
-        <a href="#product-showcase" id="top" class="col-start-4 col-end-5 m-col-start-11 m-col-end-13">&#x2191; Back To Top</a>
+        <a href="#product-showcase" id="top" class="col-start-3 col-end-5 m-col-start-11 m-col-end-13">&#x2191; Back To Top</a>
     </section>
 
-    <footer class="full-width-grid-con"></footer>
+    <footer class="full-width-grid-con">
+        <ul id="bottom-nav">
+            <li><a href="#product-showcase">Product</a></li>
+            <li><a href="#ar-object">Features</a></li>
+            <li class="menu-link-mobile"><a href="#xray-mobile">Hardware</a></li>
+            <li class="menu-link-desktop"><a href="#xray-desktop">Hardware</a></li>
+            <li><a href="#personalization">Personalization</a></li>
+            <li><a href="">Buy Now</a></li>
+        </ul>
+
+        <p id="copyright">Copyright © 2023 Project:. All rights reserved.</p>
+    </footer>
     
     <script src="js/main.js"></script>
 </body>

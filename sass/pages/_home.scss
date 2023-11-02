@@ -1,6 +1,6 @@
 @use "../abstracts/variables" as v;
 
-#product-showcase, #ar-object, #xray-desktop {
+#product-showcase, #xray-desktop {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: v.$bg-colour;
@@ -8,6 +8,17 @@
     border: 1px solid v.$bg-colour;
     border-radius: 20px;
     justify-items: center;
+}
+
+#ar-object {
+    justify-items: center;
+    z-index: 1;
+}
+
+#model-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #xray-desktop {
@@ -34,7 +45,7 @@
     }
 }
 
-#express-info {
+#express-info, #model-description {
     background-color: v.$bg-colour;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -45,6 +56,7 @@
     p {
         margin-bottom: 15px;
         &:first-of-type:not(.collab-button) {
+            text-align: center;
             line-height: 30px;
             margin-bottom: 20px;
             font-size: 20px;
@@ -105,7 +117,7 @@
 
 @media screen and (min-width: 768px) {
 
-    #product-showcase, #ar-object, #xray-desktop {
+    #product-showcase, #xray-desktop {
         padding-top: 100px;
         padding-bottom: 100px;
         background-color: v.$bg-colour;
@@ -128,7 +140,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    #product-showcase, #ar-object, #xray-desktop {
+    #product-showcase, #xray-desktop {
         padding-top: 200px;
         padding-bottom: 200px;
     }

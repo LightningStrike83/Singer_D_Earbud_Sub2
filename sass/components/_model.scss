@@ -1,6 +1,7 @@
 model-viewer {
   margin-bottom: 20px;
   height: 300px;
+  width: 300px;
 }
 
 .hotspot_icon {
@@ -187,6 +188,7 @@ model-viewer {
 @media screen and (min-width: 768px) {
   model-viewer {
     height: 550px;
+    width: 500px;
   }
 
     .Hotspot {
@@ -206,6 +208,7 @@ model-viewer {
 @media screen and (min-width: 1200px) {
   model-viewer {
     height: 800px;
+    width: 1000px;
   }
 
     .Hotspot {

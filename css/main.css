@@ -127,6 +127,9 @@ header {
 #bottom-nav li {
   margin-bottom: 15px;
 }
+#bottom-nav li:hover {
+  opacity: 50%;
+}
 
 #copyright {
   grid-column-start: 2;
@@ -137,6 +140,7 @@ header {
 model-viewer {
   margin-bottom: 20px;
   height: 300px;
+  width: 300px;
 }
 
 .hotspot_icon {
@@ -325,6 +329,7 @@ model-viewer > #ar-prompt > img {
 @media screen and (min-width: 768px) {
   model-viewer {
     height: 550px;
+    width: 500px;
   }
   .Hotspot {
     height: 20px;
@@ -340,6 +345,7 @@ model-viewer > #ar-prompt > img {
 @media screen and (min-width: 1200px) {
   model-viewer {
     height: 800px;
+    width: 1000px;
   }
   .Hotspot {
     height: 30px;
@@ -352,7 +358,7 @@ model-viewer > #ar-prompt > img {
     margin-bottom: 20px;
   }
 }
-#product-showcase, #xray-desktop {
+#product-showcase {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #dedede;
@@ -373,31 +379,7 @@ model-viewer > #ar-prompt > img {
   justify-content: center;
 }
 
-#xray-desktop {
-  display: none;
-}
-
-#xray-mobile {
-  background-color: #dedede;
-  margin-top: 20px;
-  border: 1px solid #dedede;
-  border-radius: 20px;
-  justify-items: center;
-  display: flex;
-  flex-direction: column;
-}
-#xray-mobile div {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: red;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-  border: 1px solid #dedede;
-  border-radius: 20px;
-}
-
-#express-info, #model-description {
+#express-info, #model-description, #xray-desc {
   background-color: #dedede;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -406,10 +388,10 @@ model-viewer > #ar-prompt > img {
   border: 1px solid #dedede;
   border-radius: 20px;
 }
-#express-info p, #model-description p {
+#express-info p, #model-description p, #xray-desc p {
   margin-bottom: 15px;
 }
-#express-info p:first-of-type:not(.collab-button), #model-description p:first-of-type:not(.collab-button) {
+#express-info p:first-of-type:not(.collab-button), #model-description p:first-of-type:not(.collab-button), #xray-desc p:first-of-type:not(.collab-button) {
   text-align: center;
   line-height: 30px;
   margin-bottom: 20px;
@@ -441,6 +423,14 @@ model-viewer > #ar-prompt > img {
   border: 2px solid #797979;
 }
 
+#xray-desc {
+  margin-bottom: 20px;
+}
+
+#xray-slider {
+  display: none;
+}
+
 #top-button {
   justify-items: end;
 }
@@ -468,7 +458,7 @@ model-viewer > #ar-prompt > img {
 }
 
 @media screen and (min-width: 768px) {
-  #product-showcase, #xray-desktop {
+  #product-showcase {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: #dedede;
@@ -482,9 +472,17 @@ model-viewer > #ar-prompt > img {
     padding-top: 150px;
     padding-bottom: 150px;
   }
+  #xray-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #xray-mobile img {
+    max-height: 50%;
+  }
 }
 @media screen and (min-width: 768px) {
-  #product-showcase, #xray-desktop {
+  #product-showcase {
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -493,7 +491,38 @@ model-viewer > #ar-prompt > img {
   #xray-mobile {
     display: none;
   }
-  #xray-desktop {
+  #xray-slider {
     display: grid;
+  }
+  #xray-slider #xray-container {
+    position: relative;
+    height: 75vh;
+  }
+  #xray-slider #xray-container .xray-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 75vh;
+  }
+  #xray-slider #xray-container .right-image {
+    background-image: url(/images/xray_2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  #xray-slider #xray-container .left-image {
+    background-image: url(/images/xray_1.jpg);
+    width: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  #xray-slider #xray-container .slider-bar {
+    background-color: orange;
+    left: 50%;
+    width: 5px;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=main.css.map */

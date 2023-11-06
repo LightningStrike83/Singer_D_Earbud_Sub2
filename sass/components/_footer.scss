@@ -3,6 +3,9 @@
     padding-left: 20px;
     li {
         margin-bottom: 15px;
+        &:hover {
+            opacity: 50%;
+        }
     }
 }
 

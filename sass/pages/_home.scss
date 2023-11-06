@@ -1,6 +1,6 @@
 @use "../abstracts/variables" as v;
 
-#product-showcase, #xray-desktop {
+#product-showcase {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: v.$bg-colour;
@@ -21,31 +21,7 @@
     justify-content: center;
 }
 
-#xray-desktop {
-    display: none;
-}
-
-#xray-mobile {
-    background-color: v.$bg-colour;
-    margin-top: 20px;
-    border: 1px solid v.$bg-colour;
-    border-radius: 20px;
-    justify-items: center;  
-    display: flex;
-    flex-direction: column;
-    div {
-        padding-top: 100px;
-        padding-bottom: 100px;
-        background-color: red;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        text-align: center;
-        border: 1px solid v.$bg-colour;
-        border-radius: 20px;
-    }
-}
-
-#express-info, #model-description {
+#express-info, #model-description, #xray-desc {
     background-color: v.$bg-colour;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -89,6 +65,14 @@
     }
 }
 
+#xray-desc {
+    margin-bottom: 20px;
+}
+
+#xray-slider {
+    display: none;
+}
+
 #top-button {
     justify-items: end;
 }
@@ -117,7 +101,7 @@
 
 @media screen and (min-width: 768px) {
 
-    #product-showcase, #xray-desktop {
+    #product-showcase {
         padding-top: 100px;
         padding-bottom: 100px;
         background-color: v.$bg-colour;
@@ -137,10 +121,22 @@
         padding-top: 150px;
         padding-bottom: 150px;
     }
+
+    #xray-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #xray-mobile {
+        img {
+            max-height: 50%;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
-    #product-showcase, #xray-desktop {
+    #product-showcase {
         padding-top: 200px;
         padding-bottom: 200px;
     }
@@ -151,7 +147,40 @@
         display: none;
     }
 
-    #xray-desktop {
+    #xray-slider {
         display: grid;
+        #xray-container {
+            position: relative;
+            height: 75vh;
+            .xray-image {
+                position: absolute;
+                left: 0;
+                right: 0;
+                height: 75vh;
+            }
+            .right-image {
+                background-image: url(/images/xray_2.jpg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: fixed;
+            }
+
+            .left-image {
+                background-image: url(/images/xray_1.jpg);
+                width: 50%;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: fixed;
+            }
+            .slider-bar {
+                background-color: orange;
+                left: 50%;
+                width: 5px;
+                cursor: pointer;
+            }
+        }
     }
+
 }

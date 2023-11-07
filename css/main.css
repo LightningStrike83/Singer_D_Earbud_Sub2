@@ -497,27 +497,24 @@ model-viewer > #ar-prompt > img {
   #xray-slider #xray-container {
     position: relative;
     height: 75vh;
+    overflow: scroll;
   }
   #xray-slider #xray-container .xray-image {
     position: absolute;
     left: 0;
     right: 0;
-    height: 75vh;
+    height: 500px;
   }
   #xray-slider #xray-container .right-image {
     background-image: url(/images/xray_2.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
   }
   #xray-slider #xray-container .left-image {
     background-image: url(/images/xray_1.jpg);
     width: 50%;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
   }
   #xray-slider #xray-container .slider-bar {
     background-color: orange;

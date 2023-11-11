@@ -358,16 +358,6 @@ model-viewer > #ar-prompt > img {
     margin-bottom: 20px;
   }
 }
-#product-showcase {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: #dedede;
-  margin-top: 20px;
-  border: 1px solid #dedede;
-  border-radius: 20px;
-  justify-items: center;
-}
-
 #ar-object {
   justify-items: center;
   z-index: 1;
@@ -458,19 +448,9 @@ model-viewer > #ar-prompt > img {
 }
 
 @media screen and (min-width: 768px) {
-  #product-showcase {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: #dedede;
-    margin-top: 30px;
-  }
   #express-info p:first-of-type:not(.collab-button) {
     font-size: 30px;
     line-height: 40px;
-  }
-  #product-showcase {
-    padding-top: 150px;
-    padding-bottom: 150px;
   }
   #xray-desc {
     display: flex;
@@ -479,12 +459,6 @@ model-viewer > #ar-prompt > img {
   }
   #xray-mobile img {
     max-height: 50%;
-  }
-}
-@media screen and (min-width: 768px) {
-  #product-showcase {
-    padding-top: 200px;
-    padding-bottom: 200px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -496,8 +470,7 @@ model-viewer > #ar-prompt > img {
   }
   #xray-slider #xray-container {
     position: relative;
-    height: 75vh;
-    overflow: scroll;
+    height: 500px;
   }
   #xray-slider #xray-container .xray-image {
     position: absolute;

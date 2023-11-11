@@ -358,6 +358,14 @@ model-viewer > #ar-prompt > img {
     margin-bottom: 20px;
   }
 }
+#animation {
+  max-width: 100%;
+}
+
+#animation {
+  max-width: 100%;
+}
+
 #ar-object {
   justify-items: center;
   z-index: 1;

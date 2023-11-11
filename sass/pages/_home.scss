@@ -1,5 +1,9 @@
 @use "../abstracts/variables" as v;
 
+#animation {
+    max-width: 100%;
+}
+
 #ar-object {
     justify-items: center;
     z-index: 1;

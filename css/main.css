@@ -432,6 +432,10 @@ model-viewer > #ar-prompt > img {
   display: none;
 }
 
+.desktop-text {
+  display: none;
+}
+
 #top-button {
   justify-items: end;
 }
@@ -471,6 +475,10 @@ model-viewer > #ar-prompt > img {
   align-items: start;
 }
 
+#model-description, #xray-desc, #express-info {
+  overflow: hidden;
+}
+
 @media screen and (min-width: 768px) {
   #express-info p:first-of-type:not(.collab-button) {
     font-size: 30px;
@@ -488,6 +496,12 @@ model-viewer > #ar-prompt > img {
 @media screen and (min-width: 1200px) {
   #xray-mobile {
     display: none;
+  }
+  .mobile-text {
+    display: none;
+  }
+  .desktop-text {
+    display: inline-block;
   }
   #xray-slider {
     display: grid;
@@ -514,7 +528,7 @@ model-viewer > #ar-prompt > img {
     background-repeat: no-repeat;
   }
   #xray-slider #xray-container .slider-bar {
-    background-color: #deefff;
+    background-color: #9acbfa;
     left: 50%;
     width: 5px;
     cursor: pointer;

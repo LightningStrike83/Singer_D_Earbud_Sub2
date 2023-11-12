@@ -17,17 +17,16 @@
             <a id="home-button" href="index.html" class="col-span-2 m-col-span-3"><img id="main-logo" src="images/SVG/logo.svg" alt="Project:'s logo"></a>
 
             <img id="hamburger-menu" class="col-start-4 col-end-5" src="images/SVG/ham_menu.svg" alt="Hamburger Menu">
-            <ul id="main-nav" class="col-start-3 col-end-5 m-col-start-7 m-col-end-13 l-col-start-9 l-col-end-13">
-                <li><a href="#product-showcase">Product</a></li>
-                <li><a href="#ar-object">Features</a></li>
-                <li class="menu-link-mobile"><a href="#xray-mobile">Hardware</a></li>
-                <li class="menu-link-desktop"><a href="#xray-desktop">Hardware</a></li>
-                <li><a href="#personalization">Personalization</a></li>
+            <ul id="main-nav" class="col-start-4 col-end-5 m-col-start-7 m-col-end-13 l-col-start-9 l-col-end-13">
+                <li><a class="smooth" href="#product-showcase">Product</a></li>
+                <li><a class="smooth" href="#ar-object">Features</a></li>
+                <li ><a class="smooth" href="#xray">Hardware</a></li>
+                <li><a class="smooth" href="#personalization">Personalization</a></li>
                 <li><a href="">Buy Now</a></li>
             </ul>
         </header>
 
-        <section class="grid-con" id="product-showcase" class="grid-con">
+        <section class="grid-con" id="product-showcase">
             <h2 class="hidden">Product Video</h2>
             <div class="col-span-full">
                 <canvas id="animation"></canvas>
@@ -39,7 +38,7 @@
             <div class="col-start-1 col-end-5 m-col-start-1 m-col-end-13"></div>
         </section>
 
-        <section class="grid-con" id="ar-object" class="grid-con">
+        <section class="grid-con" id="ar-object">
             <h2 class="hidden">AR Object</h2>
             <model-viewer class="col-span-full m-col-span-9" src="model/Singer_Dan_Earbud_1.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="images/poster.png" shadow-intensity="1" interaction-prompt="none">
                 <button class="Hotspot" slot="hotspot-1" data-position="12.179514646530151m 36.08121153193069m -0.5351811012523644m" data-normal="1m 0m 1.2246468525851679e-16m" data-visibility-attribute="visible">
@@ -72,11 +71,11 @@
             <div class="col-start-1 col-end-5 m-col-start-1 m-col-end-13"></div>
         </section>
 
-        <section class="grid-con" id="xray" class="grid-con">
+        <section class="grid-con" id="xray">
             <h2 class="hidden">X-Ray Earbud</h2>
             <div id="xray-desc" class="col-span-full m-col-span-4">
                 <p>Our Hardware</p>
-                <p>Project: is dedicated to delivering products that are made with the latest technology, that is also environmentally friendly! <br> Have an interactive look at the hardware that is housed by our sturdy protective casing.</p>
+                <p>Project: is dedicated to delivering products that are made with the latest technology, that is also environmentally friendly! <br> Have <span class="desktop-text">an interactive</span> <span class="mobile-text">a closer</span> look at the hardware that is housed by our sturdy protective casing. <br> <span class="desktop-text">Drag the bar in the middle of the image to the right to reveal more of our earbud, whether inside or out!</span></p>
             </div>
 
             <div id="xray-mobile" class="col-span-full m-col-span-8">
@@ -107,9 +106,9 @@
             </div>
 
             <div id="express-info" class="col-span-full m-col-start-8 m-col-end-13">
-                <p>Your Style, Your Way</p>
-                <p>Project: is dedicated to bringing product straight to your fingertips that allows you express yourself the way you deserve to be expressed. With an ongoing, continuous range of collaborations, the possibilities are near limitless!</p>
-                <p>Browse Some Of Our Collaborations:</p>
+                <p class="express-text">Your Style, Your Way</p>
+                <p class="express-text">Project: is dedicated to bringing product straight to your fingertips that allows you express yourself the way you deserve to be expressed. With an ongoing, continuous range of collaborations, the possibilities are near limitless!</p>
+                <p class="express-text">Browse Some Of Our Collaborations:</p>
 
                 <div id="express-buttons">
                     <p id="lgbtq" class="collab-button" data-member="0">LGBTQ+</p>
@@ -117,6 +116,7 @@
                     <p id="pokemon" class="collab-button" data-member="2">Pokemon</p>
                     <p id="vocaloid" class="collab-button" data-member="3">Vocaloid</p>
                     <p id="disney" class="collab-button" data-member="4">Disney</p>
+                </div>
             </div>
         </section>
 
@@ -126,16 +126,16 @@
         </section>
 
         <section id="top-button" class="grid-con">
-            <a href="#main-header" id="top" class="col-start-3 col-end-5 m-col-start-11 m-col-end-13">&#x2191; Back To Top</a>
+            <h2 class="hidden">Top Button</h2>
+            <a href="#main-header" id="top" class="col-start-3 col-end-5 m-col-start-11 m-col-end-13 smooth">&#x2191; Back To Top</a>
         </section>
 
         <footer class="full-width-grid-con">
             <ul id="bottom-nav">
-                <li><a href="#product-showcase">Product</a></li>
-                <li><a href="#ar-object">Features</a></li>
-                <li class="menu-link-mobile"><a href="#xray-mobile">Hardware</a></li>
-                <li class="menu-link-desktop"><a href="#xray-desktop">Hardware</a></li>
-                <li><a href="#personalization">Personalization</a></li>
+                <li><a class="smooth" href="#product-showcase">Product</a></li>
+                <li><a class="smooth" href="#ar-object">Features</a></li>
+                <li><a class="smooth" href="#xray">Hardware</a></li>
+                <li><a class="smooth" href="#personalization">Personalization</a></li>
                 <li><a href="">Buy Now</a></li>
             </ul>
 
@@ -146,7 +146,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/model.js"></script>
 </body>

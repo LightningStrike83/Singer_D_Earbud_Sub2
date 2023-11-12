@@ -418,9 +418,9 @@ model-viewer > #ar-prompt > img {
   margin-right: 20px;
 }
 .collab-button:hover {
-  background-color: #797979;
+  background-color: #9acbfa;
   color: white;
-  border: 2px solid #797979;
+  border: 2px solid #9acbfa;
   transition: all 0.3s ease-in-out;
 }
 
@@ -454,6 +454,21 @@ model-viewer > #ar-prompt > img {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
+}
+
+#earbud-caption {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: white;
+  border: 3px solid #deefff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#personalization {
+  align-items: start;
 }
 
 @media screen and (min-width: 768px) {

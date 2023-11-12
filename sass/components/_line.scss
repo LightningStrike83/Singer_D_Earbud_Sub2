@@ -1,7 +1,11 @@
+@use "../abstracts/variables" as v;
+
 .line-divider {
     margin-top: 20px;
     margin-bottom: 20px;
-    div {border-bottom: 3px solid black;}
+    div {
+        border-bottom: 3px solid v.$dark-gray;
+    }
 }
 
 @media screen and (min-width: 768px) {

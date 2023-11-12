@@ -1,0 +1,11 @@
+Hi Professors,
+
+Just wanted to make a note to mention; due to the amount of frames I have that are being called on in Javascript, please allow the page a moment to load. The reason is because converting it to a scrolling animation had me learn that timings for scrolling animations and video animations are different. Fast animations do not make for good scrolling animations.
+
+I do realize it's dependent on how fast one scrolls, so I tried to hit a sweet spot timing wise when I converted it to a jpg sequence. Which... is what you all have now.
+
+Apologies for the load time ^^;
+
+Sincerely,
+
+Dan

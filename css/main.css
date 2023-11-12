@@ -25,8 +25,6 @@ a:visited {
   }
 }
 header {
-  position: sticky;
-  top: 0;
   background-color: #dedede;
   border: 1px solid #dedede;
   border-radius: 10px;
@@ -345,7 +343,7 @@ model-viewer > #ar-prompt > img {
 @media screen and (min-width: 1200px) {
   model-viewer {
     height: 800px;
-    width: 1000px;
+    width: 900px;
   }
   .Hotspot {
     height: 30px;
@@ -364,6 +362,7 @@ model-viewer > #ar-prompt > img {
 
 #animation {
   max-width: 100%;
+  padding-top: 30px;
 }
 
 #ar-object {

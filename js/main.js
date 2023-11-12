@@ -14,7 +14,7 @@
         const context = animationArea.getContext("2d");
         animationArea.width = 1920;
         animationArea.height = 1080;
-        const frameCount = 690;
+        const frameCount = 2066;
 
     const frames = [];
 
@@ -53,12 +53,12 @@
 
     for(let i=0; i<frameCount; i++) {
         const img = document.createElement("img");
-        img.src = `images/scroll_animation/earbud_${(i+1).toString().padStart(5, "0")}.jpg`;
+        img.src = `images/scroll_animation/earbud__${(i+1).toString().padStart(5, "0")}.jpg`;
         frames.push(img);
     }
 
     gsap.to(frame, {
-        frame: 689,
+        frame: 2065,
         snap: "frame",
         scrollTrigger: {
             trigger: "#animation",
@@ -80,6 +80,6 @@
     document.body.addEventListener('mouseup', onUp);
     document.body.addEventListener('mousemove', onMove)
 
-    frames[0].addEventListener("onload", render)
+    frames[0].addEventListener("load", render)
 
 })();

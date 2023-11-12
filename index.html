@@ -41,7 +41,7 @@
 
         <section class="grid-con" id="ar-object" class="grid-con">
             <h2 class="hidden">AR Object</h2>
-            <model-viewer class="col-span-full m-col-span-9" src="model/Singer_Dan_Earbud_1.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.png" shadow-intensity="1" interaction-prompt="none">
+            <model-viewer class="col-span-full m-col-span-9" src="model/Singer_Dan_Earbud_1.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="images/poster.png" shadow-intensity="1" interaction-prompt="none">
                 <button class="Hotspot" slot="hotspot-1" data-position="12.179514646530151m 36.08121153193069m -0.5351811012523644m" data-normal="1m 0m 1.2246468525851679e-16m" data-visibility-attribute="visible">
                     <div class="HotspotAnnotation" id="hotspot-info-1"></div>
                 </button><button class="Hotspot" slot="hotspot-2" data-position="-17.464553552784952m 54.19875102818388m 5.742613411012748m" data-normal="-0.31202715474103904m 0.40656817885227486m 0.8586858393201534m" data-visibility-attribute="visible">
@@ -102,7 +102,8 @@
             <h2 class="hidden">Personalization</h2>
 
             <div id="personalization-image" class="col-span-full m-col-span-6">
-                <img src="images/plain.jpg" alt="A display of an earbud">
+                <img id="earbud-image" src="images/plain.jpg" alt="A display of an earbud">
+                <p id="earbud-caption">A basic model of our ear buds, that come in a variety of colours and styles! Custom orders available in Buy Now!</p>
             </div>
 
             <div id="express-info" class="col-span-full m-col-start-8 m-col-end-13">
@@ -111,11 +112,11 @@
                 <p>Browse Some Of Our Collaborations:</p>
 
                 <div id="express-buttons">
-                    <p id="lgbtq" class="collab-button">LGBTQ+</p>
-                    <p id="sanrio" class="collab-button">Sanrio</p>
-                    <p id="pokemon" class="collab-button">Pokemon</p>
-                    <p id="vocaloid" class="collab-button">Vocaloid</p>
-                    <p id="disney" class="collab-button">Disney</p>
+                    <p id="lgbtq" class="collab-button" data-member="0">LGBTQ+</p>
+                    <p id="sanrio" class="collab-button" data-member="1">Sanrio</p>
+                    <p id="pokemon" class="collab-button" data-member="2">Pokemon</p>
+                    <p id="vocaloid" class="collab-button" data-member="3">Vocaloid</p>
+                    <p id="disney" class="collab-button" data-member="4">Disney</p>
             </div>
         </section>
 
